@@ -77,12 +77,12 @@ class MusicLibraryController
     song_to_play = gets.chomp
 
     binding.pry
-    
+
       # if song_to_play.to_i >= 1 && song_to_play.to_i <= song_list.length
       #   "Playing #{song.name} by #{song.artist.name}"
       # end
 
-      
+
   end
 
 end
