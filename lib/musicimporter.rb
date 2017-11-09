@@ -13,7 +13,7 @@ class MusicImporter
         @files << file
       end
     end
-    @files.sort
+    @files
   end
 
   def import
