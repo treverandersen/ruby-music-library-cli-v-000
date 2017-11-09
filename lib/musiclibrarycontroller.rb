@@ -76,8 +76,9 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     song_to_play = gets.chomp.to_i-1
     #binding.pry
-    puts "Playing #{Song.all.sort_by{|song| song.name}[song_to_play].name} by #{Song.all.sort_by{|song| song.name}[song_to_play].artist.name}"
-
+    if Song.find_by_name({Song.all.sort_by{|song| song.name}[song_to_play].name})
+      puts "Playing #{Song.all.sort_by{|song| song.name}[song_to_play].name} by #{Song.all.sort_by{|song| song.name}[song_to_play].artist.name}"
+    end
   end
 
 end
