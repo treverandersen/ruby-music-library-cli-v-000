@@ -78,6 +78,7 @@ class MusicLibraryController
     #binding.pry
     if song_to_play > -1 && song_to_play <= Song.all.length
       puts "Playing #{Song.all.sort_by{|song| song.name}[song_to_play].name} by #{Song.all.sort_by{|song| song.name}[song_to_play].artist.name}"
+    end
   end
 
 end
