@@ -79,7 +79,6 @@ class MusicLibraryController
 
 
     #  if song_to_play.to_i >= 1 && song_to_play.to_i <= song_list.length
-    "Playing #{song.name} by #{song.artist.name}"
       #end
 
 
