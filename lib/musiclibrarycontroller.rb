@@ -19,17 +19,17 @@ class MusicLibraryController
       puts "What would you like to do?"
       input = gets.strip.downcase
       if input == "list songs"
-        MusicLibraryController.list_songs
+        list_songs
       elsif input == "list artists"
-        MusicLibraryController.list_artists
+        list_artists
       elsif input == "list genres"
-        MusicLibraryController.list_genres
+        list_genres
       elsif input == "list artist"
-        MusicLibraryController.list_songs_by_artist
+        list_songs_by_artist
       elsif input == "list genre"
-        MusicLibraryController.list_songs_by_genre
+        list_songs_by_genre
       elsif input == "play song"
-        MusicLibraryController.play_song
+        play_song
       elsif input == "exit"
         break
       end
